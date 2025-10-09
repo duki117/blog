@@ -1,0 +1,509 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003b6f;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info-container h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.especialidad {
+  font-size: 1em;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #003b6f;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 10px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #005f8e;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.intro img {
+  max-width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+.intro h2 {
+  text-align: center;
+}
+
+.articles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.articles li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #005f8e;
+}
+.ubicacion {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.ubicacion a {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ubicacion a:hover {
+  background-color: #005f8e;
+}
+
+.sobre-mi {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.sobre-mi h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sobre-mi strong {
+  color: #003b6f;
+}
+
+.logo {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.presentacion {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.presentacion img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background-color: #0077b6;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 180px;
+}
+.frase blockquote {
+  font-style: italic;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+  color: #003b6f;
+}
+/* Animaciones */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Presentación */
+.presentacion {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.presentacion img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Servicios */
+.servicios {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background-color: #0077b6;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 180px;
+}
+
+/* Frase */
+.frase blockquote {
+  font-style: italic;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+  color: #003b6f;
+}
+
+/* WhatsApp */
+.contacto-rapido {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+.blog-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.articulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.articulo-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.articulo-card:hover {
+  transform: translateY(-5px);
+}
+
+.articulo-card h3 {
+  margin-top: 0;
+  color: #003b6f;
+}
+
+.articulo-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #0077b6;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.articulo-card a:hover {
+  background-color: #005f8e;
+}
+.contacto {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contacto-info {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.mapa {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.mapa iframe {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.whatsapp, .formulario, .ubicacion{
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f8e;
+}
+
+.ubicacion iframe {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #003b6f;
+  font-weight: bold;
+}
+
+.instagram-link img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.ubicaciones {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.ubicacion-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.ubicacion-card h4 {
+  margin-top: 0;
+  color: #003b6f;
+}
+
+.ubicacion-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ubicacion-card a:hover {
+  text-decoration: underline;
+}
+.whatsapp-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.ubicaciones h3 img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.perfil {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.perfil img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.descripcion {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+.articulo {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.articulo h2 {
+  font-size: 2em;
+  color: #003b6f;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.articulo p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pdf-btn {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-btn:hover {
+  background-color: #005f8e;
+}
