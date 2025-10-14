@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #003b6f;
+  background-color: #0c3260;
   color: white;
   padding: 20px;
   flex-wrap: wrap;
@@ -79,12 +79,66 @@ main {
   margin-bottom: 10px;
 }
 
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+.footer {
+  background-color: #003b6f; /* azul médico */
+  color: #ffffff;
+  padding: 40px 20px;
+  font-size: 0.95em;
 }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+.footer-info p {
+  margin: 8px 0;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #c1a9d3; /* verde WhatsApp para contraste */
+}
+
+.footer-link img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
 
 .formulario {
   max-width: 600px;
@@ -115,24 +169,22 @@ footer {
 .formulario button:hover {
   background-color: #005f8e;
 }
-.ubicacion {
-  text-align: center;
-  margin: 40px auto;
-  max-width: 700px;
+.ubicacion-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
 }
 
-.ubicacion a {
-  display: inline-block;
-  background-color: #0077b6;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+.ubicacion-card h4 {
+  margin-top: 0;
+  color: #003b6f;
 }
 
-.ubicacion a:hover {
-  background-color: #005f8e;
+.ubicacion-card p {
+  margin: 8px 0;
+  font-size: 1em;
 }
 
 .sobre-mi {
@@ -235,7 +287,7 @@ footer {
 }
 
 .card {
-  background-color: #0077b6;
+  background-color: #0c3260;
   color: white;
   padding: 15px 20px;
   border-radius: 8px;
@@ -259,15 +311,7 @@ footer {
   margin: 40px auto;
 }
 
-.whatsapp-btn {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
+
 
 .whatsapp-btn:hover {
   background-color: #1da851;
@@ -340,7 +384,7 @@ footer {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.whatsapp, .formulario, .ubicacion{
+.whatsapp, .formulario{
   max-width: 800px;
   margin: 40px auto;
   text-align: center;
@@ -350,7 +394,7 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: #25D366;
+  background-color: #4bae4f;
   color: white;
   padding: 12px 20px;
   border-radius: 5px;
@@ -406,10 +450,12 @@ form button:hover {
 }
 
 .ubicaciones {
-  max-width: 900px;
-  margin: 40px auto;
-  text-align: left;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
+
+
 
 .ubicacion-card {
   background-color: #f9f9f9;
@@ -440,11 +486,30 @@ form button:hover {
   height: 20px;
 }
 
-.ubicaciones h3 img {
+.ubicaciones h2 {
+  font-size: 1.8em;
+  color: #003b6f;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ubicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+.ubicaciones h2 img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
   margin-right: 8px;
+}
+
+.columna-ubicacion h3 {
+  font-size: 1.4em;
+  color: #0077b6;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .perfil {
@@ -507,3 +572,144 @@ form button:hover {
 .pdf-btn:hover {
   background-color: #005f8e;
 }
+.experiencia {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.experiencia h2 {
+  font-size: 1.8em;
+  color: #003b6f;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.experiencia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.experiencia-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experiencia-grid li {
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 25px;
+}
+
+.experiencia-grid li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.horarios {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.horarios h2 {
+  font-size: 1.8em;
+  color: #003b6f;
+  margin-bottom: 30px;
+}
+
+.horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.horario-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.horario-card h3 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.horario-card p {
+  margin: 8px 0;
+  font-size: 1em;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #4bae4f;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+.descripcion p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1em;
+  color: #333;
+}
+.frase-final {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.frase-final img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.frase-final blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #003b6f;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.frase-final blockquote::before {
+  content: "“";
+  font-size: 2em;
+  color: #25D366;
+  margin-right: 5px;
+}
+
+.frase-final blockquote::after {
+  content: "”";
+  font-size: 2em;
+  color: #25D366;
+  margin-left: 5px;
+}
+
+
