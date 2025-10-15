@@ -80,31 +80,26 @@ main {
 }
 
 .footer {
-  background-color: #003b6f; /* azul médico */
+  background-color: #003b6f;
   color: #ffffff;
   padding: 40px 20px;
   font-size: 0.95em;
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+  gap: 30px;
 }
 
-.footer-info {
+.footer-info,
+.footer-contact {
+  flex: 1 1 300px;
   text-align: center;
-}
-
-.footer-logo {
-  width: 80px;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(255,255,255,0.3);
 }
 
 .footer-info p {
@@ -115,7 +110,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  text-align: center;
 }
 
 .footer-link {
@@ -126,16 +120,18 @@ main {
   color: #ffffff;
   font-weight: bold;
   transition: color 0.3s ease;
+  justify-content: center;
 }
 
 .footer-link:hover {
-  color: #c1a9d3; /* verde WhatsApp para contraste */
+  color: #25D366;
 }
 
 .footer-link img {
   width: 20px;
   height: 20px;
 }
+
 
 
 
@@ -673,43 +669,52 @@ form button:hover {
   color: #333;
 }
 .frase-final {
-  margin-top: 40px;
+  margin-top: 20px; /* antes 40px */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   width: 100%;
 }
 
 .frase-final img {
-  max-width: 280px;
+  max-width: 260px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* antes 20px */
 }
 
 .frase-final blockquote {
   font-style: italic;
   font-size: 1.1em;
-  color: #003b6f;
+  color: #003b6f; /* azul médico */
   max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
+
+/* Comillas decorativas más sutiles */
+.frase-final blockquote::before,
+.frase-final blockquote::after {
+  font-size: 2em;
+  color: #003b6f; /* reemplaza el verde por azul institucional */
+  opacity: 0.3;
+  position: absolute;
+}
+
 .frase-final blockquote::before {
   content: "“";
-  font-size: 2em;
-  color: #25D366;
-  margin-right: 5px;
+  left: -20px;
+  top: -10px;
 }
 
 .frase-final blockquote::after {
   content: "”";
-  font-size: 2em;
-  color: #25D366;
-  margin-left: 5px;
+  right: -20px;
+  bottom: -10px;
 }
+
 
 
